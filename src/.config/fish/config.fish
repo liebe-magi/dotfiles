@@ -26,3 +26,6 @@ fish_add_path ~/.cargo/bin
 
 # yarn
 fish_add_path ~/.yarn/bin
+
+# .local/bin
+fish_add_path ~/.local/bin
