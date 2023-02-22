@@ -9,6 +9,12 @@ alias gp="git push"
 alias gs="git status"
 alias gc="gitmoji -c"
 
+if test -n $(grep -i WSL2 /proc/version)
+    alias open='explorer.exe'
+else if test -n $(grep -i Ubuntu /proc/version)
+    alias open='xdg-open'
+end
+
 # starship
 starship init fish | source
 
